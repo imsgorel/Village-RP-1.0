@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex RP | Профиль</title>
+    <link rel="stylesheet" href="./styles/profile-style.css" type="text/css">
+    
+</head>
+<body>
+<!-- ----------------------Сайт меню------------------------ -->
+    <div class="site-menu">
+        <div class="logotype">
+            <img src="./styles/logo/logo-wname.png" alt="Логотип" class="logotype">
+        </div>
+
+        <header id="PageHead">
+            
+            <nav class="nav-btn-block">
+                <a href="index.html" class="navigate-button">ГЛАВНАЯ</a>
+                <a href="VillageRP-Forum/index.html" class="navigate-button">ФОРУМ</a>
+                <a href="donate.html" class="navigate-button">ДОНАТ</a>
+                <a href="top-players.html" class="navigate-button">ТОПЫ</a>
+                <a id="GoToProfile" class="navigate-button"> ЛИЧНЫЙ КАБИНЕТ <i class='fa fa-user-circle-o'></i></a>
+            </nav>
+        </header>
+    </div>
+        
+
+    <div class="head-line"></div>
+
+<!-- ---ТУТ БУДЕТ КОНЕНТ--- -->
+    <div class="user-info">
+        <div class="info-block">
+            <div id="UserAvatar"></div>
+            <div id="UserInfo">
+                <h1 id="userNickName">Имя_Фамилия</h1>
+                <p id="userLevel"></p>
+                <p id="userEXP"></p>
+                <p id="userMoney"></p>
+                <p id="userMoneyBank"></p>
+                <p id="userHome"></p>
+                <p id="userCars"></p>
+                <p id="userCar1"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script> //ПРОВЕРКА НА ВХОД В ПРОФИЛЬ
+    document.getElementById('GoToProfile').addEventListener('click', function() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'user_data.txt', true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+        var user = parseInt(xhr.responseText);
+        if (user === 0) {
+            window.location = 'registration.html';
+        } else if (user === 1) {
+            window.location = 'login.html';
+        } else if (user === 2) {
+            window.location = 'profile.html';
+        } else {
+            alert('User not found');
+        }
+        }
+    };
+    xhr.send();
+    });
+</script>
+
+<script> //ДАННЫЕ ЮЗЕРА
+    var nickname = 'Dexn_White'; //Ник-Нейм юзера
+    var level = 100; //Уровень перса
+    var level_exp = 80; //Нынешний EXP до след уровня
+    var level_next = 120; //Нужный EXP до след уровня
+    var money_hand = 5000; //Денег на руках
+    var money_bank = 0; //Денег в банке
+    var home = 'Без места жительства'; //Место жительства
+    var cars = '1'; //Автомобилей во владении
+    var car1 = 'Audi RS7 C8'; //Автомобиль №1
+    var tuning_stage = 'Stage 1';
+    var car_price = "гос. стоимость: 25.000.000 руб";
+    var diesel = 20;
+    var diesel_full = 100;
+    var diesel_second = 50;
+    var diesel_max = diesel_full + diesel_second;
+     document.getElementById("userNickName").innerHTML=nickname;
+     document.getElementById("userLevel").innerHTML="Уровень: " + level;
+     document.getElementById("userEXP").innerHTML="Опыта до след. уровня: " + level_exp + "/" + level_next;
+     document.getElementById("userMoney").innerHTML="Денег на руках: " + money_hand + " руб.";
+     document.getElementById("userMoneyBank").innerHTML="Денег в банке: " + money_bank + " руб.";
+     document.getElementById("userHome").innerHTML="Место жительства: " + home;
+     document.getElementById("userCars").innerHTML="Автомобили во владении: " + cars + " -";
+     document.getElementById("userCar1").innerHTML= (
+        "1. " + car1 + " | " + tuning_stage + " / " + car_price + " / " + diesel + "л." + " из " + diesel_max + "л."
+        );
+</script>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex RP | Главная</title>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
+    
+</head>
+<body>
+<!-- ----------------------Сайт меню------------------------ -->
+    <div class="site-menu">
+        <div class="logotype">
+            <img src="./styles/logo/logo-wname.png" alt="Логотип" class="logotype">
+        </div>
+
+        <div id="GoToUppp" class="GoToUp"> <!--КНОПКА ВВЕРХ-->
+            <div class="GoToUpButton"></div>
+         </div>
+
+        <header id="PageHead">
+            
+            <nav class="nav-btn-block">
+                <a href="index.html" class="navigate-button">ГЛАВНАЯ</a>
+                <a href="VillageRP-Forum/index.html" class="navigate-button">ФОРУМ</a>
+                <a href="donate.html" class="navigate-button">ДОНАТ</a>
+                <a href="top-players.html" class="navigate-button">ТОПЫ</a>
+                <a id="GoToProfile" class="navigate-button"> ЛИЧНЫЙ КАБИНЕТ <i class='fa fa-user-circle-o'></i></a>
+            </nav>
+        </header>
+    </div>
+        
+
+    <div class="head-line"></div>
+
+<!-- --------------------------------------------------CПИСОК СОЦ СЕТЕЙ-------------------------------------------------- -->
+    <div class="get-socials"> <!--Список СОЦ СЕТЕЙ-->
+        <link rel="stylesheet" href="./styles/socials-button-style.css">
+        <form action="https://vk.com/imsgorel" target="_blank"> <button class="link-social-button-VK" id="LinkSocialButtonVK"></button> </form>
+        <form action="https://discord.gg/BEKXtrxN" target="_blank"> <button class="link-social-button-DS" id="LinkSocialButtonDS"></button> </form>
+        <form action="https://t.me/imsgorel17" target="_blank"> <button class="link-social-button-TG" id="LinkSocialButtonTG"></button> </form>
+        
+    </div>
+
+    
+<!-- --------------------------------------------------КНОПКА "НАЧАТЬ ИГРУ"-------------------------------------------------- -->
+    <div class="page-top-content">
+
+        <div class="Content-With-GlowButton">
+            <div class="content-1">
+                <div class="start-game-title">
+                    <p>Присоединяйся к нам, мы тебя очень ждем!</p>
+                </div>
+            </div>
+
+            <head-2>
+                <link rel="stylesheet" href="./styles/glow-button-style.css">
+                
+                    <div class="glow-btn">
+                        <button id="StartGameGlowButton" class="glow-button" type="button">
+                            <i id="start-game-icon" class='fa fa-gamepad'></i> НАЧАТЬ ИГРУ
+                        </button>   
+                    </div>
+
+                    <div class="playnow-desc"><p class="sgt-style">Лишь ты выбираешь свой путь.</p></div>
+
+            </head-2>
+
+    </div>
+
+        
+
+    </div>
+<!-- ---------------------------Кнопка "ПОСМОТРИ ВИДЕО О НАС!"-------------------------- -->    
+    <div class="game-video-trailer">
+        <link rel="stylesheet" href="./styles/video-trailer.css">
+        <div class="play-video">
+            <button id="ShowGameTrailer" class="play-video-button"><i class="fa fa-play"></i></button>
+        </div>
+        <p class="play-video-text">Ознакомься с нашей игрой!</p>
+        
+    </div>
+
+    <div id="GameVideoTrailer" class="game-trailer-box">
+        <link rel="stylesheet" href="./styles/video-trailer.css"> <!--ВИДЕО-->
+        <div class="game-trailer-video">
+                <div class="vid-trl-capt-1">
+                    <p class="game-trailer-caption">Видео о Violet RP</p>    
+                    <span class="close">&times;</span>
+                </div>
+            <iframe width="100%" height="600px" src="https://www.youtube.com/embed/AHzm7PFiIsU" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+<!-- ---------------------------------Появление картинок при открытии страницы-------------------------------- -->
+    <div class="hidden-blocks-container">
+        <div class="hidden-block" id="prev-1">Блок 1</div>
+        <div class="hidden-block" id="prev-2">Блок 2</div>
+        <div class="hidden-block" id="prev-3">Блок 3</div>
+    </div>
+
+<!-- --------------------------------------------------ИНСТУКЦИЯ ПО СКАЧИВАНИЮ-------------------------------------------------- -->
+    <div id="DownloadInfoBlock" class="download-game-block">
+        <link rel="stylesheet" href="./styles/download-button-style.css">
+
+        <style> /*Стиль стрелок вниз*/
+            .htd-step {
+                font-weight: 700;
+            }
+            .download-image {
+                width: 50px;
+                height: 50px;
+            }
+        </style>
+
+        <h3 class="king-label" align="center">Инструкция по установке</h2>   
+            <img class="download-image" src="./styles/img/download.png">
+        <p class="htd-text"> <span class="htd-step">Шаг 1 - </span> Загрузите наш лаунчер и следуйте инструкциям в установщике:
+                <span> <button class="download-button" align="center" onclick="triggerDownload('Installer.exe')"><i id="download-icon" class='fa fa-download'></i> ЗАГРУЗИТЬ</button> </span> </p>
+        
+        <p class="htd-text"> <span class="htd-step">Шаг 2 - </span> Запустив лаунчер, загрузите игру, выбрав путь для установки (желательно на диск C).</p>
+        <nav>
+            <style> /*Стиль навигационной кнопки "Антивирус ругается?"*/
+                        .navigate-button-howtofix {
+                            font-size: 15px;
+                            text-align: center;
+                            display: inline-block;
+                            padding: 15px 40px;
+                            cursor: pointer;
+                            letter-spacing: 2px;
+                            position:relative;
+                            overflow:hidden;
+                            margin: 0 20px;
+                            background: #0000001f;
+                            font-weight: 400;
+                            width: 250px;
+                        }
+                        .navigate-button-howtofix:before {
+                            content: "";
+                            position: absolute;
+                            width: 0;
+                            background : #000000; /*Нижняя полоска*/
+                            left: 45%;
+                            height: 2px;
+                            bottom: 0;
+                            transition: all .3s;
+                        }
+                        
+                        .navigate-button-howtofix:hover:before {
+                            width: 100%;
+                            left:0;
+                        }
+
+                        .navigate-button-howtofix:active {
+                            background: #0000005b;
+                        }
+            </style>
+            <a href="how-to-fix-antivirus-block.html" class="navigate-button-howtofix">Ругается антивирус?</a>
+        </nav>
+                
+        <p class="htd-text"> <span class="htd-step">Шаг 3 - </span> Войдите в свой аккаунт и начните игру!</p>
+        <p></p>
+    </div>
+
+
+    <div id="GoToDownImages" class="gotodown-image">
+        <img id="GoToDownImage" class="GoToDown" src="./styles/img/GoToDown_light.png">
+        <img id="GoToDownImage" class="GoToDown" src="./styles/img/GoToDown_light.png">
+        <img id="GoToDownImage" class="GoToDown" src="./styles/img/GoToDown_light.png">
+    </div>
+
+
+<!-- --------------------------------------------------ИНФО БЛОК-------------------------------------------------- -->
+    <div id="InfoBlockWitDesc" class="info-block-1">
+        <style>
+            .info-block-1 {
+            margin: 0 auto;
+            max-width: 1200px;
+            box-shadow: 2px 2px 5px 5px #00000027;
+            letter-spacing: 1px;
+            /*background: rgb(255, 255, 255);*/
+            background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+            margin-bottom: 5%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 15px;
+            color:black;
+            }
+
+            .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 15px;
+            font-size: 15px;
+            }
+            
+            .card {
+            width: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 16px;
+            }
+            
+            .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            }
+
+            .card p {
+            margin-top: -50px;
+            margin-bottom: 8px;
+            font-size: 16px;
+            }
+        </style>
+        
+        <h2 class="king-label-2" align="center">Чем мы можем похвастаться?</h2>
+
+        <div class="card-container">
+            <div class="card">
+            <img src="./styles/img/info-cards/car-info.png" alt="Cars">
+            <p align="center">Большое разнообразие автомобилей</p>
+            </div>
+
+            <div class="card">
+            <img src="./styles/img/info-cards/microphone-info.png" alt="Microphone">
+            <p align="center">Голосовой чат с возможностью шумоподавления</p>
+            </div>
+            
+            <div class="card">
+                <img src="./styles/img/info-cards/home-info.png" alt="Home">
+                <p align="center">Проработанная система домов и мебели</p>
+            </div>
+
+            <div class="card">
+                <img src="./styles/img/info-cards/tuning-info.png" alt="Tuning">
+                <p align="center">Огромное количество тюнинга на авто</p>
+            </div>
+            
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+            <img src="./styles/img/info-cards/economy-info.png" alt="Money">
+            <p align="center">Сбалансированная экономика, даже рыжик сможет кайфовать</p>
+            </div>
+
+            <div class="card">
+            <img src="./styles/img/info-cards/map-info.png" alt="Map">
+            <p align="center">Красивая карта с новым маппингом</p>
+            </div>
+            
+            <div class="card">
+                <img src="./styles/img/info-cards/graphic-info.png" alt="Videocard">
+                <p align="center">Красивая графика, которая пойдет даже на среднем ПК</p>
+            </div>
+
+            <div class="card">
+                <img src="./styles/img/info-cards/cookies-info.png" alt="Cookie">
+                <p align="center">И множество других интересных плюшек</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+<!-- ------------------------Системные требования------------------------------- -->
+    <div class="sys-params-block" id="SystemParamsBlock">
+        <div class="sys-button-class"> <!--Кнопка "СИСТЕМНЫЕ ТРЕБОВАНИЯ"-->
+            <div class="sys-params-button-block">
+                <div id="ShowSystemParameters" class="sys-params-button">СИСТЕМНЫЕ ТРЕБОВАНИЯ</div>
+            </div>
+        </div>
+
+
+        <div class="content-3">
+            <div class="sys-params-caption">
+                <p align="center" class="syspar-king-caption">Системные требования:</p>
+            </div>
+            
+            <!-- -------------------------------ТАБЛИЦА С МИНИМАЛЬНЫМИ СИС. ТРЕБОВАНИЯМИ------------------------------- -->
+            <div class="sysparam-table-caption">
+                <div class="head-line-syspar"></div>
+                <p align="center" class="syspar-text-caption">Минимальные</p>
+                <div class="head-line-syspar"></div>
+            </div>
+
+            <div class="sys-params-table">
+                
+            <table> 
+                <tr>
+                    <th  class="sys-param-caption">Версия ОС</th>
+                    <th>Windows 8 х64 (и выше)</th>
+                </tr>
+                <tr>
+                    <th class="sys-param-caption">Оперативная память</th>
+                    <th>4 Гб DDR3</th>
+                </tr>
+                <tr>
+                    <th class="sys-param-caption">Процессор</th>
+                    <th>Intel/AMD с частотой не менее 2.4 GHz</th>
+                </tr>
+                <tr>
+                    <th class="sys-param-caption">Видеопамять</th>
+                    <th>Не менее 1 Гб</th>
+                </tr>
+                <tr>
+                    <th class="sys-param-caption">Свободное пространство</th>
+                    <th>Не менее 15 Гб свободного места</th>
+                </tr>
+                <tr>
+                    <th class="sys-param-caption">Скорость интернет-соединения</th>
+                    <th>20 Мбит/сек</th>
+                </tr>
+            </table>
+            </div>
+
+            <!-- -------------------------------ТАБЛИЦА С РЕКОМЕНДУЕМЫМИ СИС. ТРЕБОВАНИЯМИ------------------------------- -->
+            <div class="sysparam-table-caption">
+                <div class="head-line-syspar"></div>
+                <p align="center" class="syspar-text-caption">Рекомендуемые</p>
+                <div class="head-line-syspar"></div>
+            </div>
+
+            <div class="sys-params-table">
+                <table>
+                    <tr>
+                        <th  class="sys-param-caption">Версия ОС</th>
+                        <th>Windows 10 х64 (и выше)</th>
+                    </tr>
+                    <tr>
+                        <th class="sys-param-caption">Оперативная память</th>
+                        <th>8 Гб DDR3</th>
+                    </tr>
+                    <tr>
+                        <th class="sys-param-caption">Процессор</th>
+                        <th>Intel/AMD с частотой не менее 3 GHz</th>
+                    </tr>
+                    <tr>
+                        <th class="sys-param-caption">Видеопамять</th>
+                        <th>Не менее 3 Гб</th>
+                    </tr>
+                    <tr>
+                        <th class="sys-param-caption">Свободное пространство</th>
+                        <th>Не менее 15 Гб свободного места</th>
+                    </tr>
+                    <tr>
+                        <th class="sys-param-caption">Скорость интернет-соединения</th>
+                        <th>50 Мбит/сек</th>
+                    </tr>
+                </table>
+                </div>
+
+            <!-- -------------------------------ТАБЛИЦА С СИС. ТРЕБОВАНИЯМИ ДЛЯ УЛЬТРА НАСТРОЕК------------------------------- -->
+            <div class="sysparam-table-caption">
+                <div class="head-line-syspar"></div>
+                <p align="center" class="syspar-text-caption">Для ультра настроек</p>
+                <div class="head-line-syspar"></div>
+            </div>
+
+            <div class="sys-params-table">
+                <table>
+                    <tr>
+                        <th  class="sys-param-caption">Версия ОС</th>
+                        <th>Windows 10 х64 (и выше)</th>
+                    </tr>
+                    <tr>
+                        <th class="sys-param-caption">Оперативная память</th>
+                        <th>8 Гб DDR4</th>
+                    </tr>
+                    <tr>
+                        <th class="sys-param-caption">Процессор</th>
+                        <th>Intel/AMD с частотой не менее 3.6 GHz</th>
+                    </tr>
+                    <tr>
+                        <th class="sys-param-caption">Видеопамять</th>
+                        <th>Не менее 6 Гб</th>
+                    </tr>
+                    <tr>
+                        <th class="sys-param-caption">Свободное пространство</th>
+                        <th>Не менее 15 Гб свободного места</th>
+                    </tr>
+                    <tr>
+                        <th class="sys-param-caption">Скорость интернет-соединения</th>
+                        <th>50 Мбит/сек</th>
+                    </tr>
+                </table>
+                </div>
+        </div>
+    </div>
+    </body>
+    </html>
+
+<!-- -----------------------КНОПКА ВВЕРХ---------------------- -->
+
+
+<!-- -------------------------------JAVA SCRIPTS----------------------------- -->
+
+<script> //Плавно переносит к верху страницы при её обновлении
+    window.onload = () => document.getElementById('PageHead').scrollIntoView({behavior: "smooth", block: "start"});
+</script>
+
+<script> //По нажатию "НАЧАТЬ ИГРУ" переносит на гайд по установке
+    document.getElementById("StartGameGlowButton").addEventListener("click", function() {
+        document.getElementById('DownloadInfoBlock').scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+    });
+
+
+</script>
+
+<div class="download-game-btn"> <!-- КНОПКА СКАЧАТЬ -->
+    <script>
+        function triggerDownload(fileName) {
+        var element = document.createElement('a');
+        element.setAttribute('href', fileName);
+        element.setAttribute('download', fileName);
+        element.style.display = 'none';
+        document.body.appendChild(element);
+        // Происходит клик, словно совершил его сам программирующий ниндзя
+        element.click();
+        document.body.removeChild(element);
+        }
+    </script>
+</div>
+
+<script> //По нажатию "СИСТЕМНЫЕ ТРЕБОВАНИЯ" переносит к системным требованиям
+    document.getElementById("ShowSystemParameters").addEventListener("click", function() {
+        document.querySelector(".content-3").style.display = "block"; // Показывает системные требования
+    });
+    document.getElementById("ShowSystemParameters").addEventListener("click", function() {
+        document.getElementById('SystemParamsBlock').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+</script>
+
+<script> //Скрипт появления картинок при загрузке страницы
+    const hiddenBlocks = document.querySelectorAll('.hidden-block');
+    const guideBlock = document.getElementById('DownloadInfoBlock');
+    var gotoupbtn = document.getElementById('GoToUppp');
+
+    function updateBlocksVisibility() {
+        const guideBlockRect = guideBlock.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // Проверка: если центр блока виден или ниже окна
+        if (guideBlockRect.top + guideBlockRect.height / 2 <= windowHeight) {
+            hiddenBlocks.forEach(block => {
+                block.classList.add('visible'); // Показываем блоки
+                gotoupbtn.style.opacity = "1";
+            });
+        } else {
+            hiddenBlocks.forEach(block => {
+                block.classList.remove('visible'); // Скрываем блоки
+                gotoupbtn.style.opacity = "0";
+            });
+        }
+    }
+    window.addEventListener('scroll', updateBlocksVisibility);
+    updateBlocksVisibility();
+</script>
+
+<script> //Показывает окно с видосом трейлера
+    var video_trailer = document.getElementById("GameVideoTrailer");
+    var showTrailer_button = document.getElementById("ShowGameTrailer");
+    var close_video_window = document.getElementsByClassName("close")[0];
+
+    showTrailer_button.onclick = function() {
+    video_trailer.style.display = "block";
+    }
+
+    close_video_window.onclick = function() {
+    video_trailer.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+    if (event.target == video_trailer) {
+        video_trailer.style.display = "none";
+    }
+    }
+</script>
+
+<script> //ПРОВЕРКА НА ВХОД В ПРОФИЛЬ
+    document.getElementById('GoToProfile').addEventListener('click', function() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'user_data.txt', true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+        var user = parseInt(xhr.responseText);
+        if (user === 0) {
+            window.location = 'registration.html';
+        } else if (user === 1) {
+            window.location = 'login.html';
+        } else if (user === 2) {
+            window.location = 'profile.html';
+        } else {
+            alert('User not found');
+        }
+        }
+    };
+    xhr.send();
+    });
+</script>
+
+<script> //По нажатию "СИСТЕМНЫЕ ТРЕБОВАНИЯ" переносит к системным требованиям
+   document.getElementById("GoToDownImages").addEventListener("click", function() {
+        document.getElementById('InfoBlockWitDesc').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+</script>
