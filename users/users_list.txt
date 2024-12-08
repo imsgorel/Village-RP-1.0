@@ -1,0 +1,6 @@
+id=000000001
+nickname="Dmitry_White"
+password=228337
+two_fa=0
+server=1
+===============================

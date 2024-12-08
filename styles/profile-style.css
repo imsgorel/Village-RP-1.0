@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: white;
+    background-image: url('img/background-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+nav {
+    margin-top: 0px;
+}
+
+.head-line {
+    position: relative;
+    background: linear-gradient(to right, white, #b1b1b1, #838383, #000000, #838383, #b1b1b1, white);
+    width: 100%;
+    height: 1px;
+}
+.Content-With-GlowButton { /*ОТСТУП КНОПКИ "НАЧАТЬ  ИГРАТЬ" ОТ ВЕРХА*/
+    margin-top: 250px;
+}
+nav a {
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.navigate-button {  /*Дизайн кнопки навигации*/
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 40px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position:relative;
+    overflow:hidden;
+    margin: 0 20px;
+}
+  
+.navigate-button:before {   /*Дизайн кнопки навигации*/
+    content: "";
+    position: absolute;
+    width: 0;
+    background : #000000;
+    left: 45%;
+    height: 2px;
+    bottom: 0;
+    transition: all .2s;
+}
+  
+.navigate-button:hover:before { /*Дизайн кнопки навигации*/
+    width: 100%;
+    left:0;
+}
+
+.navigate-button:active {   /*Дизайн кнопки навигации*/
+    background: rgba(0, 0, 0, 0.103);
+}
+
+.content-1 {
+    justify-content: center;
+}
+
+.start-game-title {
+    width: 500px;
+    height: 100px;
+    font-size: 20px;
+    z-index: -4;
+    margin-top: 150px;
+    color: #000;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: -30px;
+}
+/*---------Вывод текста при наведении на "НАЧАТЬ ИГРУ"--------*/
+.glow-btn {
+    margin: 0 auto;
+    width: 260px;
+    height: 60px;
+}
+
+.playnow-desc {
+    width: 500px;
+    height: 100px;
+    letter-spacing: 2px;
+    z-index: -4;
+    margin-top: -35px;
+    color: #00000000;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    transition: margin-top 0.3s ease-in-out;
+    position: absolute;
+}
+
+.glow-btn:hover ~ .playnow-desc {
+    margin-top: -15px;
+    color: #000;
+    transition: margin-top 0.3s ease-in-out;
+}
+
+.sgt-style {
+    font-weight: 500;
+    font-size: 11px;
+}
+/*----------Кнопка "Видео-Трейлер"-----------*/
+.game-video-trailer {
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.play-video-text {
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
+
+.play-video-button {
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    outline: none;
+    max-width: 100px;
+    max-height: 100px;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    font-style: italic;
+    color: aliceblue;
+    border-radius: 50%;
+    background: #00000074;
+    /*background: linear-gradient(110deg, #ff00aa, #cc00ff, #7a00ff);*/
+    transition: background 0.2s;
+    z-index: 0;
+    cursor: pointer;
+    position: relative;
+    /*box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.709);*/
+}
+
+.play-video-button:before {
+    content: '';
+    background: linear-gradient(45deg,
+     #7a00ff, #cc00ff, #ff00aa, #ff00dd, #7a00ff);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 50%;
+}
+
+.play-video-button:active {
+    color: #000
+}
+
+.play-video-button:active:after {
+    background: transparent;
+}
+
+.play-video-button:hover:before {
+    opacity: 1;
+}
+
+.play-video-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ff00d4, #ae00ff);
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+/*-----------Появление картинки при скролле-----------*/
+.hidden-blocks-container {
+    margin: 0 auto;
+    display: flex;
+    gap: 18px;    
+    justify-content: center; 
+    align-items: center;
+    text-align: center;   
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+.hidden-block {
+    border-radius: 10px;
+    width: 400px;
+    height: 180px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 10px 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.visible {
+    display: block;
+    opacity: 1;
+}
+#prev-1 {background: url('img/previews/prev-1.jpg'); background-size: cover;}
+#prev-2 {background: url('img/previews/prev-2.jpg'); background-size: cover;}
+#prev-3 {background: url('img/previews/prev-3.jpg'); background-size: cover;}
+
+/*----------------ЛОГО (ЛОГОТИП) ПРОЕКТА-----------------*/
+.logotype {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+/*----------------------------------ВЕРХ СТРАНИЦЫ-------------------------------------*/
+
+.page-top-content {
+    margin-top: -120px;
+    display: flex;
+    justify-content: center;
+}
+
+.get-socials {
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+/*------------------------ПОЛЕ С ИНФОЙ ЮЗЕРА-----------------------*/
+.user-info {
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.info-block {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 1500px;
+    height: 800px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 5px #00000027;
+    letter-spacing: 1px;
+    color: black;
+    background: #ffffff;
+}
+
+#UserAvatar {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    background-image: url('img/user-avatar.jpg');
+    background-size: cover;
+    border-radius: 20px;
+}
+
+#UserInfo {
+    font-weight: 400;
+    letter-spacing: 2px;
+}

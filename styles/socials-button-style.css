@@ -1,0 +1,238 @@
+.get-socials {
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    margin-right: 85px;
+    margin-top: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/*---------------- VK --------------------*/
+.link-social-button-VK {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    outline: none;
+    max-width: 100px;
+    max-height: 100px;
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    color: aliceblue;
+    border-radius: 50%;
+    background: #5366ba;
+    background-image: url(img/socials/VK_Button_static.png);
+    background-size: cover;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.709);
+    transition: background 0.2s;
+    z-index: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.link-social-button-VK:before {
+    content: '';
+    background: linear-gradient(to right, #0e4eb5, #779cdc, #4369a7);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    animation: glowing 15s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 50%;
+}
+
+.link-social-button-VK:active {
+    color: #000
+}
+
+.link-social-button-VK:active:after {
+    background-image: url(img/socials/VK_Button_hover-2.png);
+    transition: background 0.1s ease;
+    
+}
+
+.link-social-button-VK:hover:before {
+    opacity: 1;
+}
+
+.link-social-button-VK:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5366ba;
+    background-image: url(img/socials/VK_Button_static.png);
+    background-size: cover;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*---------------- Telegram --------------------*/
+.link-social-button-TG {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    color: aliceblue;
+    border-radius: 50%;
+    background: #03b8ff;
+    background-image: url(img/socials/TG_Button_static.png);
+    background-size: cover;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.709);
+    transition: background 0.2s;
+    z-index: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.link-social-button-TG:before {
+    content: '';
+    background: linear-gradient(to right, #00a2ff, #94d8ff, #00a2ff);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    animation: glowing 15s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 50%;
+}
+
+.link-social-button-TG:active {
+    color: #000
+}
+
+.link-social-button-TG:active:after {
+    background-image: url(img/socials/TG_Button_hover.png);
+    transition: background 0.1s ease;
+    
+}
+
+.link-social-button-TG:hover:before {
+    opacity: 1;
+}
+
+.link-social-button-TG:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00a2ff;
+    background-image: url(img/socials/TG_Button_static.png);
+    background-size: cover;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*---------------- Discord --------------------*/
+.link-social-button-DS {
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    color: aliceblue;
+    border-radius: 50%;
+    background: #5366ba;
+    background-image: url(img/socials/DS_Button_static.png);
+    background-size: cover;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.709);
+    transition: background 0.2s;
+    z-index: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.link-social-button-DS:before {
+    content: '';
+    background: linear-gradient(to right, #4f4fab, #8a8ac9, #4f4fab);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    animation: glowing 15s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 50%;
+}
+
+.link-social-button-DS:active {
+    color: #000
+}
+
+.link-social-button-DS:active:after {
+    background-image: url(img/socials/DS_Button_hover.png);
+    transition: background 0.1s ease;
+    
+}
+
+.link-social-button-DS:hover:before {
+    opacity: 1;
+}
+
+.link-social-button-DS:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #6153ba;
+    background-image: url(img/socials/DS_Button_static.png);
+    background-size: cover;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+

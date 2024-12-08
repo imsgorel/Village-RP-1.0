@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: white;
+    background-image: url('img/login-background-2.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+nav {
+    margin-top: 0px;
+}
+
+.head-line {
+    position: relative;
+    background: linear-gradient(to right, #ffffff00, #b1b1b1, #838383, #000000, #838383, #b1b1b1, #ffffff00);
+    width: 100%;
+    height: 1px;
+}
+.Content-With-GlowButton { /*ОТСТУП КНОПКИ "НАЧАТЬ  ИГРАТЬ" ОТ ВЕРХА*/
+    margin-top: 250px;
+}
+nav a {
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.navigate-button {  /*Дизайн кнопки навигации*/
+    font-family: "Montserrat", sans-serif;
+    background: none;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 40px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position:relative;
+    overflow:hidden;
+    margin: 0 20px;
+}
+  
+.navigate-button:before {   /*Дизайн кнопки навигации*/
+    content: "";
+    position: absolute;
+    width: 0;
+    background : #000000;
+    left: 45%;
+    height: 2px;
+    bottom: 0;
+    transition: all .2s;
+}
+  
+.navigate-button:hover:before { /*Дизайн кнопки навигации*/
+    width: 100%;
+    left:0;
+}
+
+.navigate-button:active {   /*Дизайн кнопки навигации*/
+    background: rgba(0, 0, 0, 0.103);
+}
+
+/*----------------ЛОГО (ЛОГОТИП) ПРОЕКТА-----------------*/
+.logotype {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+/*----------------------------------ВЕРХ СТРАНИЦЫ-------------------------------------*/
+
+.page-top-content {
+    margin-top: -120px;
+    display: flex;
+    justify-content: center;
+}
+*/
+
+/*----------------------------ОКНО АВТОРИЗАЦИИ-------------------------------*/
+.login-container {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 1000px;
+    height: 600px;
+    padding: 20px;
+    z-index: 10;
+}
+
+.login-block {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 700px;
+    color: #000000;
+    z-index: 10;
+}
+
+.server-selector-label {
+    font-weight: 500;
+}
+
+.login-background {
+    border-radius: 30px;
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(0, 0, 0, 0.089);
+    backdrop-filter: blur(5px);
+    background: #ffffff62;
+    width: 100%;
+    height: 100%;
+}
+.log-caption {
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+.input-content {
+    margin: 0 auto;
+    gap: 35px;
+    margin-top: 50px;
+    width: 300px;
+}
+
+.choose_server {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    content: '';
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 2px 2px 5px 2px #00000048;
+    outline: none;
+}
+.input_nickname {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    content: '';
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px #00000048;
+    outline: none;
+}
+.input_password {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    content: '';
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px #00000048;
+    outline: none;
+}
+.input_2fa {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    content: '';
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px #00000048;
+    outline: none;
+}
+
+.re-captcha {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}

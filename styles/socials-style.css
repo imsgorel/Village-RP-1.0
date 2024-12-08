@@ -1,0 +1,166 @@
+.king-label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.socials-label {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/*----------------------------Кнопка "Мы в соц-сетях" квадратная----------------------------*/
+.Socials-Box {
+    margin-top: 1000px;
+}
+
+.socials-block {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    /*cursor: pointer;*/
+    cursor: url("mouse.png"), auto;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+.btn:before {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+  
+  
+.btn-sep {
+    padding: 25px 60px 25px 120px;
+}
+  
+.btn-sep:before {
+    background: rgba(0,0,0,0.15);
+}
+  
+  /* Button 1 - VKONTAKTE*/
+.btn-1 {
+    background: linear-gradient(#3477db, #15315c);
+    color: #fff;
+}
+  
+.btn-1:hover {
+    background: linear-gradient(#3d8bff, #15315c);
+}
+  
+.btn-1:active {
+    background: linear-gradient(#5d9eff, #204988);
+    top: 2px;
+}
+  
+.btn-1:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+  
+  /* Button 2 - TELEGRAM */
+.btn-2 {
+    background: linear-gradient(#00aeff, #004363);
+    color: #fff;
+}
+  
+.btn-2:hover {
+    background: linear-gradient(#43c3ff, #004363);
+}
+  
+.btn-2:active {
+    background: linear-gradient(#73d3ff, #005f8b);
+    top: 2px;
+}
+  
+.btn-2:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+  
+  /* Button 3 - DISCORD */
+.btn-3 {
+    background: linear-gradient(#404b6e, #171c2c);
+    color: #fff;
+}
+  
+.btn-3:hover {
+    background: linear-gradient(#566594, #171c2c);
+}
+  
+.btn-3:active {
+    background: linear-gradient(#6779b1, #1a2033);
+    top: 2px;
+}
+  
+.btn-3:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+  
+  /* Иконки */
+  
+.icon-cart:before {
+    content: "\f05a";
+}
+  
+.icon-heart:before {
+    content: "\f05a";
+}
+  
+.icon-info:before {
+    content: "\f05a";
+}
+  
+.icon-send:before {
+    content: "\f1d8";
+}
